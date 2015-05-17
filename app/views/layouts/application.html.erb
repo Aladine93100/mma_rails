@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+      <title>MMA</title>
+      <link href='http://fonts.googleapis.com/css?family=Codystar|Michroma|Wire+One|Anton|Russo+One|Great+Vibes|Bangers|Courgette|Special+Elite|Cinzel+Decorative' rel='stylesheet' type='text/css'>      
+      <link href="css/YouTubePlayer/YTPlayer.css" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.js"></script>
+      <script src="inc/jquery.mb.YTPlayer.js"></script>
+      <script>jQuery(function(){if (self.location.href == top.location.href){var logo=$("<a href='http://pupunzi.com/#mb.components/components.html' style='position:absolute;top:0;z-index:1000'><img id='logo' border='0' src='http://pupunzi.com/images/logo.png' alt='mb.ideas.repository'></a>");$("#wrapper").prepend(logo);$("#logo").fadeIn();}jQuery(".player").mb_YTPlayer();});</script>
+
+</body>
+</html>
